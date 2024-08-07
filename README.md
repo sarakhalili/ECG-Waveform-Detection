@@ -71,9 +71,6 @@ This project detailed the preprocessing, time-domain analysis, and waveform dete
 ## Files and Directories
 
 - **images/**: Contains images used in this README for visualization.
-- **preprocessed_eeg_data.npy**: Numpy array of preprocessed EEG data.
-- **eeg_labels.npy**: Numpy array of EEG labels.
-- **eeg_labels_binary.npy**: Numpy array of binary EEG labels.
 
 ## How to Run
 
