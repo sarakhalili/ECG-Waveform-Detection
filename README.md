@@ -13,7 +13,7 @@ The ECG signals were loaded from CSV files generated from the MIT-BIH Arrhythmia
 • **High-pass Filter**: This function applies a high-pass filter to remove baseline wandering from the ECG signal.
 
 
-![Preprocessed vs Raw ECG Signal](images/preprocessed_vs_raw.png)
+![Preprocessed vs Raw ECG Signal](images/raw_and_preprocessed_signal.png)
 
 ## Time-Domain Analysis
 
@@ -30,6 +30,7 @@ The R-peaks were detected using the `find_peaks` function from the `scipy.signal
 
 ![R-peaks Detection](images/r_peaks_detection.png)
 
+
 ### Heart Rate and Moving Average Calculation
 
 - **RR Intervals**: Time differences between successive R-peaks.
@@ -39,12 +40,17 @@ The R-peaks were detected using the `find_peaks` function from the `scipy.signal
 - **Mean RR Interval**: 0.7181 s
 - **Standard Deviation of RR Intervals**: 0.1450 s
 
+![Moving average](images/heart_rate.png)
+![Heart beats](images/heartbeats.png)
+
 ## Waveform Detection
 
 ### Q, S, P, and T Wave Detection
 
 - **Q and S Waves**: Detected as minima around R-peaks.
 - **P and T Waves**: Detected as maxima in broader intervals before and after R-peaks.
+
+![Wave Detection](images/wave_detection.png)
 
 ### Waveform Duration Calculation
 
