@@ -9,7 +9,9 @@ The goal of this project is to preprocess ECG signals, perform time-domain analy
 ## Data Loading and Preprocessing
 
 The ECG signals were loaded from CSV files generated from the MIT-BIH Arrhythmia Database. The preprocessing steps include filtering to remove noise, baseline wandering correction, and normalization of the signal amplitude.
+
 • **Bandpass Filter**: This function applies a bandpass filter to the ECG signal to remove noise. The filter passes frequencies between the lowcut and highcut values, which are normalized by the Nyquist frequency.
+
 • **High-pass Filter**: This function applies a high-pass filter to remove baseline wandering from the ECG signal.
 
 
